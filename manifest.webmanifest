@@ -1,0 +1,48 @@
+{
+  "name": "PC de los Altos CRM + ERP",
+  "short_name": "PC Altos",
+  "description": "Gestión de clientes, ventas, cotizaciones, servicios, cobranza y seguimientos.",
+  "id": "./",
+  "start_url": "./index_crm.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f6f8fb",
+  "theme_color": "#312e81",
+  "lang": "es-MX",
+  "orientation": "any",
+  "categories": ["business", "productivity"],
+  "icons": [
+    {
+      "src": "./icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "./icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Clientes",
+      "short_name": "Clientes",
+      "url": "./index_crm.html?view=clientes",
+      "icons": [{"src": "./icons/icon-192.png", "sizes": "192x192"}]
+    },
+    {
+      "name": "Notificaciones",
+      "short_name": "Alertas",
+      "url": "./index_crm.html?view=notificaciones",
+      "icons": [{"src": "./icons/icon-192.png", "sizes": "192x192"}]
+    },
+    {
+      "name": "Cotizaciones",
+      "short_name": "Cotizar",
+      "url": "./index_crm.html?view=cotizaciones",
+      "icons": [{"src": "./icons/icon-192.png", "sizes": "192x192"}]
+    }
+  ]
+}

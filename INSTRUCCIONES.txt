@@ -1,0 +1,30 @@
+PC DE LOS ALTOS CRM + ERP PWA — VERSIÓN 0.9
+
+ARCHIVOS QUE DEBEN SUBIRSE JUNTOS A GITHUB
+- index_crm.html
+- manifest.webmanifest
+- sw.js
+- carpeta icons
+
+PUBLICACIÓN EN GITHUB PAGES
+1. Coloca todos los archivos en la raíz del repositorio respetando la carpeta icons.
+2. En GitHub entra a Settings > Pages.
+3. Selecciona Deploy from a branch, la rama main y la carpeta /(root).
+4. Abre la dirección HTTPS publicada por GitHub Pages.
+
+PRIMERA VERIFICACIÓN
+1. Confirma que el encabezado muestre “Base conectada”.
+2. En Configuración abre “Aplicación PWA y notificaciones”.
+3. Presiona “Activar” y acepta el permiso del navegador.
+4. Presiona “Enviar prueba”.
+5. Instala la aplicación con el botón “Instalar aplicación” o con el menú del navegador.
+
+FIREBASE
+- Habilita Authentication > Anónimo.
+- Publica el contenido de firestore.rules en Firestore Database > Reglas.
+- Los datos se guardan en crmUsers/{UID}/crmData.
+
+IMPORTANTE SOBRE LAS NOTIFICACIONES
+- Esta versión genera alertas del CRM mientras la aplicación está abierta o permanece activa.
+- Para enviar notificaciones push remotas con la aplicación totalmente cerrada se debe configurar Firebase Cloud Messaging y proporcionar la clave pública VAPID del proyecto.
+- PWA, service workers y notificaciones requieren HTTPS. GitHub Pages proporciona HTTPS.
